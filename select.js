@@ -25,6 +25,6 @@ $(document).ready(function(){
     //     $(this).css('background-color', '#fff');
     //     $(this).css('padding-bottom', '10px'); // light blue color
     // });
-// change somthing
+
 
 });
