@@ -440,12 +440,13 @@ tr:nth-child(odd) {
 #footer .footer-second{
     padding: 15px;
 }
-
-
+#second .dropdown-item:hover{
+    border-bottom: 4px solid #9f9f9f;
+    background-color: transparent;
+}
 /* nav.menu .dropdown a{
     background: rebeccapurple;
 }
-
 nav.menu .show a{
     background: red;
 } */
