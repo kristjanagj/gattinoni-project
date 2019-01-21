@@ -2,7 +2,6 @@ html, body{
     font-family: 'Open Sans', sans-serif;
     font-family: 'PT Sans', sans-serif;
 }
-
 .container{
     position: relative;
     max-width: 1180;
@@ -16,17 +15,21 @@ html, body{
     padding: 30px 15px;
 }
 #header .icon{
-    margin-top: 40px;
+    margin-top: 60px;
     position: relative;
     list-style: none;
     display: flex;
     justify-content: flex-end;
+    padding-right: 65px;
 }
 .icons{
     text-align: right;
 }
+.icon li a{
+    padding: 15px;
+}
 .dropdown-toggle::after {
-    color: transparent;
+    display: none;
 }
 .dropdown-menu{
     min-width: 330px;
@@ -36,7 +39,7 @@ html, body{
     padding-bottom: 0;
     font-size: 16px;
     border: 1px solid #d9d9d9;
-    margin-top: 0;
+    margin-top: 48;
     border-top: 0;
     border-radius: 0;
     z-index: 1002;
@@ -45,7 +48,7 @@ html, body{
     content: "";
     display: block;
     position: absolute;
-    bottom: -61px;
+    bottom: -45px;
     left: 25;
     right: 0;
     margin-left: auto;
@@ -58,17 +61,18 @@ html, body{
     z-index: 9999;
 }
 #second .dropdown-menu{
-    min-width: 330px;
+    min-width: 781px;
     top: 70px;
     left: -94px;
-    padding-top: 0;
-    padding-bottom: 0;
-    font-size: 16px;
+    padding: 20px;
+    font-size: 18px;
     border: 1px solid #d9d9d9;
-    margin-top: 0;
+    margin-top: -5px;
     border-top: 0;
     border-radius: 0;
     z-index: 1002;
+    color: #7f7f7f;
+
 }
 #second .dropdown-menu a[aria-expanded=true]:after {
     content: "";
@@ -90,9 +94,6 @@ html, body{
     background-color: #ddec45;
     margin-top: -6px;
 }
-.submenu-header a{
-    text-align: end;
-}
 .submenu-header li{
     text-decoration: none;
 }
@@ -102,6 +103,10 @@ ul li{
 #header ul{
     padding-left: 0px;
 }
+
+.account li{
+    background-color: #feffeb;
+}
 a {
     color: #333333;
     padding: 10px;
@@ -109,15 +114,16 @@ a {
 }
 .submenu-header a{
     color: #007bff;
-    text-decoration: underline;
     float: right;
     padding-top: 0px;
+    text-decoration: none;
+    margin-top: -16px;
 }
 #header ul li a span {
     font-size: 24px;
     color: #d40e15;
     background-color: #feffeb;
-        padding: 8px 35px 6px 0px;
+    padding-right: 25px;
 }
 #header .dropdown-menu li{
     border-top: 1px solid #d9d9d9;
@@ -125,14 +131,24 @@ a {
     padding: 6px 0px;
     margin-bottom: -3px;
 }
-
 #header .dropdown-menu ul{
     background-color: #f6f6f6;
 }
-.dropdown-menu.show{
+.dropdown-menu .show{
     position: absolute;
-    transform: translate3d(-46px, -35px, 0px);
+    transform: translate3d(10px, 80px, 0px);
     top: 0px;
+    left: 0px;
+    will-change: transform;
+    margin-top: 116px;
+}
+#header .dropdown-menu {
+    margin-top: 23px;
+}
+#second .dropdown .dropdown-menu .show {
+    position: absolute;
+    transform: translate3d(10px, 141px, 0px);
+    top: -127px;
     left: 0px;
     will-change: transform;
     margin-top: 116px;
@@ -148,7 +164,7 @@ strong{
 #second .dropdown-item {
     display: inline;
     max-width: 100%; 
-    padding: 3px;
+    padding: 10px;
     white-space: nowrap;
     border: 0;
     font-size: 18px;
@@ -160,36 +176,22 @@ strong{
 }
 .one.btn {
     border: 1px solid #8ccbc0;
-    background-image: url("images/vector.png");
-    background-repeat: no-repeat;
 }
 #second .dropdown-toggle{
     color: #585858;
     font-weight: bold;
     font-size: 18px;
 }
-.one.btn.active{
-    background-color: #8ccbc0;
-    padding-bottom: 65px;
-}
 .two.btn {
     border: 1px solid #fbc12d;
-    background-image: url("images/selected.png");
-    background-repeat: no-repeat;
 }
-/* .two.btn.active{
-    background-color: #fbc12d;
-    padding-bottom: 65px;
-    } */
 .three.btn {
     border: 1px solid #9186bc;
-    background-image: url("images/tavel.png");
-    background-repeat: no-repeat;
 }
-/* .three.btn.active{
-    background-color: #9186bc;
-    padding-bottom: 65px;
-    } */
+#second .show .one.btn, #second .show .two.btn, #second .show .three.btn{
+    border: 1px solid #d9d9d9;
+    background-color: white;
+}
 .network.btn{
     background-color: #fafafa;
     border: 1px solid #d9d9d9;
@@ -205,6 +207,17 @@ strong{
 #second{
     background-color: #f6f6f6;
     border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 40px;
+}
+.vector-img{
+    top: 49px;
+    right: 9px;
+    position: absolute;
+}
+#voli .vector-img {
+    top: 4px;
+    right: 20px;
+    position: absolute;
 }
 .border-left{
     height: 10%;
@@ -221,22 +234,11 @@ strong{
 .voli p{
     font-size: 18px;
 }
-/* .tick-image:before {
-    content: "";
-    width: 18px;
-    height: 18px;
-    display: inline-block;
-    margin-right: 5px;
-    vertical-align: text-top;
-    background-color: white;
-    background-position : center center;
-    background-repeat:no-repeat;
-    border-radius: 50%;
-    border-color: #333333;
+.ricerca .check{
+    font-size: 18px;
+    font-weight: bold;
+    padding-right: 13px;
 }
-.tick:before{
-    background-image : url("images/tick.png");
-} */
 .tick-image.btn-default{
     background-color: #ffffff;
     color: #7f7f7f;
@@ -245,11 +247,11 @@ strong{
     padding-bottom: 0px;
     padding-right: 0px;
     margin-top: 10px;
+    box-shadow: 0 0 0 5px #f6f6f6;
 }
 .ricerca{
     text-align: right;
 }
-
 form{
     color: #7f7f7f;
     font-size: 18px;
@@ -266,7 +268,7 @@ form{
     -ms-user-select: none;
     user-select: none;
 }
-.check input {
+.check input{
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -299,12 +301,12 @@ form{
     display: block;
 }
 .check .checkmark:after {
-    left: 8px;
-    top: 5px;
+    left: 7px;
+    top: 4px;
     width: 5px;
     height: 10px;
     border: solid #fff;
-    border-width: 0 3px 3px 0;
+    border-width: 0 2px 2px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -359,9 +361,10 @@ label{
     font-family: 'PT Sans', sans-serif;
 }
 .table td {
-    padding: 13px 40px;
+    padding: 13px 33px;
     border: none;
     text-transform: uppercase;
+    color: #7f7f7f;
 }
 tr:nth-child(even) {
     background: #ffffff
@@ -372,6 +375,7 @@ tr:nth-child(odd) {
 
 #collapseTable .card-body, #collapseExample .card-body {
     border: none;
+    padding: 10px;
 }
 #collapseExample .card-body {
     padding: 0px;
@@ -383,6 +387,7 @@ tr:nth-child(odd) {
     background-color: #f6f6f6;
     border: 1px solid #8ccbc0;
     width: 98%;
+    font-size: 15px;
 }
 .btn-primary:hover, .btn-primary:focus {
     color: #585858;
@@ -405,9 +410,12 @@ tr:nth-child(odd) {
     background-color: #f6f6f6;
     border-top: 1px solid #d9d9d9;
 }
-.footer-list{
+.footer-list  a{
     color: #7f7f7f;
     font-weight: bold;
+    text-decoration: none;
+}
+.footer-list  {
     border-bottom: 1px solid #d9d9d9;
 }
 #footer .list-inline-item {
@@ -424,12 +432,21 @@ tr:nth-child(odd) {
     transform: rotate(100deg);
     color: #000000;
 }
-.footer-secondlist{
+.footer-secondlist a{
     color: #7f7f7f;
     font-size: 14px;
+    text-decoration: none;
 }
 #footer .footer-second{
     padding: 15px;
 }
 
+
+/* nav.menu .dropdown a{
+    background: rebeccapurple;
+}
+
+nav.menu .show a{
+    background: red;
+} */
 

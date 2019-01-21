@@ -99,7 +99,7 @@
                                             </li>
                                         </ul> 
                                         <ul>
-                                            <li><a href="#"><span>Emergenza          02 39.86.44.25</span></a></li>                                                                                                                                             
+                                            <li><a href="#"><span>Emergenza  02 39.86.44.25</span></a></li>                                                                                                                                             
                                             <li><a href="#">DPack...........................02 3456789</a></li>                                                                                                                                                 
                                             <li><a href="#">Selected........................02 3456789</a></li>                                                          
                                             <li><a href="#">Travel Experience..........02 3456789</a></li>
@@ -118,7 +118,7 @@
                                                 <!-- <a href="#">Impostazioni</a> -->
                                             </li>
                                         </ul> 
-                                        <ul>
+                                        <ul class="account">
                                             <li><a href="#">Impostazioni Account</a></li>                                                                                                                                             
                                             <li><a href="#">Gestione Mark-up & Fee</a></li>                                                                                                                                                 
                                             <li><a href="#">Atlante Plus</a></li>                                                          
@@ -138,9 +138,10 @@
     <div id="second" class="wrapper">
         <div class="container">          
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-9">
                     <div class="dropdown">
-                        <a class="btn btn-default dropdown-toggle btn-dpack one active" data-toggle="dropdown"> DPack</a>
+                        <a class="btn btn-default dropdown-toggle btn-dpack one" data-toggle="dropdown"> DPack</a>
+                        <span class="vector-img"><img src="images/vector.png"></span>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="#">Voli</a>
                             <a class="dropdown-item" href="#">Hotel</a>
@@ -154,6 +155,7 @@
                     </div>
                     <div class="dropdown">
                         <a class="btn btn-default dropdown-toggle btn-selected two" data-toggle="dropdown">Selected</a>
+                        <span class="vector-img"><img src="images/selected.png"></span>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="#">Vacanze</a>
                             <a class="dropdown-item" href="#">Soggiorni</a>
@@ -163,6 +165,7 @@
                     </div>
                     <div class="dropdown">
                         <a class="btn btn-default dropdown-toggle btn-travel-experience three" data-toggle="dropdown">Travel Experience</a>
+                        <span class="vector-img"><img src="images/tavel.png"></span>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="#">Cerca</a>                   
                             <a class="dropdown-item" href="#">Wedding</a>
@@ -170,7 +173,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 network border-left">
+                <div class="col-md-3 network border-left">
                     <a class="btn btn-default network" href="#">Il mio network</a>
                 </div>
             </div>
@@ -184,11 +187,13 @@
             </div>
             <div class="row">
                 <div class="col-md-12 ricerca">
-                    <p><a class="btn btn-default tick-image tick" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                            <label class="check">RICERCA AVANZATA
-                                <input type="checkbox">
-                                <span class="checkmark"><img src="images/tick.png"></span>
-                            </label> </a> </p>                                                 
+                    <a class="btn btn-default tick-image tick" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"> 
+                        <span class="vector-img"><img src="images/vector.png"></span>                          
+                        <label class="check">RICERCA AVANZATA                                   
+                            <input type="checkbox">
+                            <span class="checkmark"><img src="images/tick.png"></span>
+                        </label> 
+                    </a>                                                 
                 </div>
             </div>
             <form>  
@@ -242,6 +247,7 @@
                                 <div class="form-group form-inline justify-content-start">
                                     <label for="andata" class="control-label" for="date">ANDATA*</label>         
                                     <div class="input-group">
+                                    <!-- <label for="andata" class="control-label" for="date">ANDATA*</label>  -->
                                     <div class="input-group-addon">
                                         <i class="fa fa-calendar"></i>
                                     </div>
@@ -354,70 +360,70 @@
                         <div class="card card-body">
                             <table class="table">
                                 <tr>
-                                    <td>milano linate-roma ciampino</td>
-                                    <td>andata: 25/01/2018 - 10:00</td>
-                                    <td>ritorno: 29/01/2018 - 18:00</td>
-                                    <td>A: 2 -B: 1 -N: 0</td>
+                                    <td><strong>milano linate-roma ciampino</strong></td>
+                                    <td>andata: <strong>25/01/2018</strong> - 10:00</td>
+                                    <td>ritorno: <strong>29/01/2018</strong> - 18:00</td>
+                                    <td>A: <strong>2</strong> -B: <strong>1</strong> -N: <strong>0</strong></td>
                                 </tr>
                                 <tr>
-                                    <td >milano linate-roma ciampino</td>
-                                    <td>andata: 25/01/2018 - 10:00</td>
-                                    <td>ritorno: 29/01/2018 - 18:00</td>
-                                    <td>A: 2 -B: 1 -N: 0</td>
+                                    <td><strong>milano linate-roma ciampino</strong></td>
+                                    <td>andata: <strong>25/01/2018</strong> - 10:00</td>
+                                    <td>ritorno: <strong>29/01/2018</strong> - 18:00</td>
+                                    <td>A: <strong>2</strong> -B: <strong>1</strong> -N: <strong>0</strong></td>
                                 </tr>
                                 <tr>
-                                    <td>milano linate-roma ciampino</td>
-                                    <td>andata: 25/01/2018 - 10:00</td>
+                                    <td><strong>milano linate-roma ciampino</strong></td>
+                                    <td>andata: <strong>25/01/2018</strong> - 10:00</td>
                                     <td></td>
-                                    <td>A: 2 -B: 1 -N: 0</td>
+                                    <td>A: <strong>2</strong> -B: <strong>1</strong> -N: <strong>0</strong></td>
                                 </tr>
                                 <tr>
-                                    <td>milano linate-roma ciampino</td>
-                                    <td>andata: 25/01/2018 - 10:00</td>
-                                    <td>ritorno: 29/01/2018 - 18:00</td>
-                                    <td>A: 2 -B: 1 -N: 0</td>
+                                    <td><strong>milano linate-roma ciampino</strong></td>
+                                    <td>andata: <strong>25/01/2018</strong> - 10:00</td>
+                                    <td>ritorno: <strong>29/01/2018</strong> - 18:00</td>
+                                    <td>A: <strong>2</strong> -B: <strong>1</strong> -N: <strong>0</strong></td>
                                 </tr>
                                 <tr>
-                                    <td>milano linate-roma ciampino</td>
-                                    <td>andata: 25/01/2018 - 10:00</td>
+                                    <td><strong>milano linate-roma ciampino</strong></td>
+                                    <td>andata: <strong>25/01/2018</strong> - 10:00</td>
                                     <td></td>
-                                    <td>A: 2 -B: 1 -N: 0</td>
+                                    <td>A: <strong>2</strong> -B: <strong>1</strong> -N: <strong>0</strong></td>
                                 </tr>
                                 <tr>
-                                    <td>milano linate-roma ciampino</td>
-                                    <td>andata: 25/01/2018 - 10:00</td>
-                                    <td>ritorno: 29/01/2018 - 18:00</td>
-                                    <td>A: 2 -B: 1 -N: 0</td>
+                                    <td><strong>milano linate-roma ciampino</strong></td>
+                                    <td>andata: <strong>25/01/2018</strong> - 10:00</td>
+                                    <td>ritorno: <strong>29/01/2018</strong> - 18:00</td>
+                                    <td>A: <strong>2</strong> -B: <strong>1</strong> -N: <strong>0</strong></td>
                                 </tr>
                                 <tr>
-                                    <td>milano linate-roma ciampino</td>
-                                    <td>andata: 25/01/2018 - 10:00</td>
-                                    <td>ritorno: 29/01/2018 - 18:00</td>
-                                    <td>A: 2 -B: 1 -N: 0</td>
+                                    <td><strong>milano linate-roma ciampino</strong></td>
+                                    <td>andata: <strong>25/01/2018</strong> - 10:00</td>
+                                    <td>ritorno: <strong>29/01/2018</strong> - 18:00</td>
+                                    <td>A: <strong>2</strong> -B: <strong>1</strong> -N: <strong>0</strong></td>
                                 </tr>
                                 <tr>
-                                    <td>milano linate-roma ciampino</td>
-                                    <td>andata: 25/01/2018 - 10:00</td>
-                                    <td>ritorno: 29/01/2018 - 18:00</td>
-                                    <td>A: 2 -B: 1 -N: 0</td>
+                                    <td><strong>milano linate-roma ciampino</strong></td>
+                                    <td>andata: <strong>25/01/2018</strong> - 10:00</td>
+                                    <td>ritorno: <strong>29/01/2018</strong> - 18:00</td>
+                                    <td>A: <strong>2</strong> -B: <strong>1</strong> -N: <strong>0</strong></td>
                                 </tr>
                                 <tr>
-                                    <td>milano linate-roma ciampino</td>
-                                    <td>andata: 25/01/2018 - 10:00</td>
+                                    <td><strong>milano linate-roma ciampino</strong></td>
+                                    <td>andata: <strong>25/01/2018</strong> - 10:00</td>
                                     <td></td>
-                                    <td>A: 2 -B: 1 -N: 0</td>
+                                    <td>A: <strong>2</strong> -B: <strong>1</strong> -N: <strong>0</strong></td>
                                 </tr>
                                 <tr>
-                                    <td>milano linate-roma ciampino</td>
-                                    <td>andata: 25/01/2018 - 10:00</td>
+                                    <td><strong>milano linate-roma ciampino</strong></td>
+                                    <td>andata: <strong>25/01/2018</strong> - 10:00</td>
                                     <td></td>
-                                    <td>A: 2 -B: 1 -N: 0</td>
+                                    <td>A: <strong>2</strong> -B: <strong>1</strong> -N: <strong>0</strong></td>
                                 </tr>
                                 <tr>
-                                    <td>milano linate-roma ciampino</td>
-                                    <td>andata: 25/01/2018 - 10:00</td>
-                                    <td>ritorno: 29/01/2018 - 18:00</td>
-                                    <td>A: 2 -B: 1 -N: 0</td>
+                                    <td><strong>milano linate-roma ciampino</strong></td>
+                                    <td>andata: <strong>25/01/2018</strong> - 10:00</td>
+                                    <td>ritorno: <strong>29/01/2018</strong> - 18:00</td>
+                                    <td>A: <strong>2</strong> -B: <strong>1</strong> -N: <strong>0</strong></td>
                                 </tr>                                          
                             </table>
                         </div>
@@ -435,17 +441,17 @@
             </div>
             <div class="footer-list">
                 <ul class="list-inline">
-                    <li class="list-inline-item">Assisteza e Contatti</li>
-                    <li class="list-inline-item">Gattinonimondovacanze.it </li>
-                    <li class="list-inline-item">Atlante Plus</li>
-                    <li class="list-inline-item">Gestione White Label</li>
+                    <li class="list-inline-item"><a href="#">Assisteza e Contatti</a></li>
+                    <li class="list-inline-item"><a href="#">Gattinonimondovacanze.it </a></li>
+                    <li class="list-inline-item"><a href="#">Atlante Plus</a></li>
+                    <li class="list-inline-item"><a href="#">Gestione White Label</a></li>
                     <span class="search"><i class="fa fa-search"></i></span>
                 </ul>
             </div>
             <div class="footer-secondlist">
                 <ul class="list-inline">
-                    <li class="list-inline-item footer-second">Agenzie online: 102</li>
-                    <li class="list-inline-item footer-second">Rimuovi i cookies</li>
+                    <li class="list-inline-item footer-second"><a href="#">Agenzie online: 102</a></li>
+                    <li class="list-inline-item footer-second"><a href="#">Rimuovi i cookies</a></li>
                 </ul>
             </div>
         </div>

@@ -7,24 +7,4 @@ $(document).ready(function(){
         todayHighlight: true,
         autoclose: true,
     })
-
-    $('.btn.two').on("click", function() {
-        $(this).css('background-color', '#fbc12d');
-        $(this).css('padding-bottom', '65px');
-    });
-    
-    $('.btn.three').on("click", function() {
-        $(this).css('background-color', '#9186bc');
-        $(this).css('padding-bottom', '65px');
-    });
-
-    // $(".btn.two").mouseover(function () {
-    //     $(this).css('background-color', '#fbc12d');
-    //     $(this).css('padding-bottom', '65px'); 
-    // }).mouseout(function () {
-    //     $(this).css('background-color', '#fff');
-    //     $(this).css('padding-bottom', '10px'); // light blue color
-    // });
-
-
 });
