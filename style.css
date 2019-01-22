@@ -67,28 +67,16 @@ html, body{
     padding: 20px;
     font-size: 18px;
     border: 1px solid #d9d9d9;
-    margin-top: -5px;
+    margin-top: -3px;
     border-top: 0;
     border-radius: 0;
     z-index: 1002;
     color: #7f7f7f;
 
 }
-#second .dropdown-menu a[aria-expanded=true]:after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: -61px;
-    left: 25;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 0;
-    height: 0;
-    border-left: 12px solid transparent;
-    border-right: 12px solid transparent;
-    border-top: 15px solid #8ccbc0;
-    z-index: 9999;
+.fa-calendar{
+    font-size: 15px;
+    padding: 0px;
 }
 .submenu-header{
     background-color: #ddec45;
@@ -174,8 +162,46 @@ strong{
 .btn:focus{
     box-shadow: none;
 }
+.dpack, .selected, .tavel{
+    max-width: 11%;
+}
 .one.btn {
     border: 1px solid #8ccbc0;
+}
+.dpack .vector-img {
+    top: 49px;
+    right: 21px;
+    position: absolute;
+}
+.selected .vector-img {
+    top: 48px;
+    right: 8px;
+    position: absolute;
+}
+.travel .vector-img {
+    top: 48px;
+    right: 4px;
+    position: absolute;
+}
+#second .dropdown > a.one.btn.active {
+    background-color: #8ccbc0;
+    padding: 15px 15px 50px 15px;
+} 
+#second .dropdown > a.one.btn.active:before{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -15px;
+    left: 2px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 0;
+    height: 0;
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    border-top: 17px solid #8ccbc0;
+    z-index: 9999;
 }
 #second .dropdown-toggle{
     color: #585858;
@@ -188,17 +214,37 @@ strong{
 .three.btn {
     border: 1px solid #9186bc;
 }
-#second .show .one.btn, #second .show .two.btn, #second .show .three.btn{
+#second .show .two.btn, #second .show .three.btn{
     border: 1px solid #d9d9d9;
     background-color: white;
+}
+
+#second .dropdown > a.one.btn.active[aria-expanded=true] {
+    border: 1px solid #d9d9d9;
+    background-color: white;
+}
+#second .dpack .dropdown-menu {
+    margin-top: -44px;
+}
+#second .dropdown > a.one.btn.active:before .show{
+    display: none;
 }
 .network.btn{
     background-color: #fafafa;
     border: 1px solid #d9d9d9;
     margin: 20px 0px 0px 40px;
+    color: #888888;
+    font-weight: bold;
+    padding: 10px 20px;
 }
 #second .dropdown{
     display: inline-flex;
+}
+#second .selected .dropdown-menu {
+    min-width: 420px;
+}
+#second .travel .dropdown-menu {
+    min-width: 320px;
 }
 .four{
     display: flex;
@@ -207,12 +253,6 @@ strong{
 #second{
     background-color: #f6f6f6;
     border-bottom: 1px solid #d9d9d9;
-    padding-bottom: 40px;
-}
-.vector-img{
-    top: 49px;
-    right: 9px;
-    position: absolute;
 }
 #voli .vector-img {
     top: 4px;
@@ -221,7 +261,7 @@ strong{
 }
 .border-left{
     height: 10%;
-    margin-top: 35px;
+    margin: 35px 0px 0px 400px;
 }
 .voli{
     text-align: center;
@@ -333,6 +373,8 @@ h2{
 .ricerca-two.btn-default{
     border:2px solid #8ccbc0;
     color: #7f7f7f;
+    background-color: #f6f6f6;
+    font-weight: bold;
 }
 label{
     padding: 10px;
@@ -451,3 +493,202 @@ nav.menu .show a{
     background: red;
 } */
 
+@media (max-width: 1199px) { 
+    .dpack .vector-img {
+        top: 49px;
+        right: 2px;
+    }
+    .selected .vector-img {
+        right: -11px;
+    }
+    .travel .vector-img {
+        right: -26px;
+    }
+    #second .dropdown-menu {
+        padding: 13px;
+        min-width: 470px;
+    }
+    #second .dropdown > a.one.btn.active:before {
+        left: 23px;
+    }
+    .border-left {
+        margin: 35px 0px 0px 301px;
+    }
+}
+
+
+@media (max-width: 991px) { 
+    .menu-brand img {
+        padding: 16px;
+    }
+    .dpack, .selected, .tavel {
+        max-width: 20%;
+    }
+    .dpack .vector-img, .selected .vector-img  {
+        right: 25px;
+    }
+    #header .icon {
+        margin-top: 100px;
+    }
+    .travel .vector-img {
+        right: -67px;
+    }
+    #second .dropdown > a.one.btn.active:before {
+        left: 5px;
+    }
+    .form-inline .form-control {
+        width: 100%;
+    }
+    .tick-image.btn-default {
+        margin: 10px 10px 20px 0px;
+    }
+    .bootstrap-iso .form-inline .form-control {
+        width: 100%;
+    }
+    .bootstrap-iso .form-inline .input-group > .form-control {
+        width: 100%;
+    }
+    .table td {
+        padding: 10px 9px;
+    }
+    #footer .list-inline-item {
+        padding: 5px;
+        padding-top: 17px;
+    }
+    .border-left {
+        margin: 35px 0px 0px 127px;
+    }
+}
+@media (max-width: 767px) { 
+    .menu-brand img {
+        padding: 35px 0px;
+    }
+    .dpack, .selected, .tavel {
+        max-width: 100%;
+    }
+    #header .icon {
+        margin-top: -3px;
+        padding-bottom: 20px;
+        padding-right: 0px; 
+    }
+    #second .dropdown-toggle {
+        width: 100%;
+    }
+    #header .dropdown-menu {
+        margin-top: 29px;
+    }
+    #second .dropdown > a.one.btn.active {
+        background-color: #8ccbc0;
+        padding-bottom: 15px;
+        width: 100%;
+    }
+    #second .dropdown-menu {
+        padding: 14px;
+        min-width: 95%;
+    }
+    #second .dropdown > a.one.btn.active:before{
+    display: none;
+    }
+    .network.btn {
+        width: 98%;
+    }
+    .border-left{
+        margin-left: -36px;
+    }
+    #second {
+        padding-bottom: 20px;
+    }
+    .dpack .vector-img {
+        right: 25px;
+    }
+    .selected .vector-img, .travel .vector-img {
+        right: 4px;
+    }
+    .tick-image.btn-default {
+        text-align: center;
+        width: 100%;
+        margin: 20px 0px 45px 0px;
+    }
+    #voli .vector-img {
+        top: 14px;
+        right: 11px;
+    }
+    .check {
+        font-size: 16px;
+    }
+    .bootstrap-iso .form-inline .input-group > .form-control {
+        width: 100%;
+    }
+    .campi{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .ricerca-two.btn-default {
+        width: 100%;
+        margin: 50px 0px 0px 0px;
+    }
+    #footer .list-inline-item {
+        padding: 5px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer-list a {
+        padding: 3px;
+    }
+}
+@media (max-width: 575px) { 
+    .form-check-inline {
+        padding-left: 56px;
+    }
+    .bootstrap-iso .form-inline .input-group > .form-control {
+        width: 100%;
+    }
+    .form-check-inline {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer-list a {
+        padding: 3px;
+    }
+    #second .dropdown-item {
+        display: flex;
+    }
+    .check {
+        font-size: 14px;
+    }
+}
+@media (max-width: 320px) { 
+    .menu-brand img {
+        padding: 20px 0px;
+    }
+    .bootstrap-iso .form-inline .input-group > .form-control {
+        width: 100%;
+    }
+    .form-check-inline {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #second .dropdown-menu {
+        padding: 12px;
+        min-width: 93%;
+    }
+    #second .dropdown-item {
+        display: flex;
+    }
+    #collapseTable .card-body, #collapseExample .card-body {
+        padding: 3px;
+    }
+    .table td {
+        padding: 2px;
+    }
+    strong {
+        font-size: 13px;
+    }
+    .checkmark img {
+        margin-top: -6px;
+    }
+    .footer-list a {
+        padding: 3px;
+    }
+
+}

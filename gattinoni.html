@@ -133,9 +133,9 @@
     <div id="second" class="wrapper">
         <div class="container">          
             <div class="row">
-                <div class="col-md-9">
-                    <div class="dropdown">
-                        <a class="btn btn-default dropdown-toggle btn-dpack one" data-toggle="dropdown"> DPack</a>
+                <!-- <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12"> -->
+                    <div class="dropdown col-md-2 col-sm-12 col-xs-12 dpack">
+                        <a class="active btn btn-default dropdown-toggle btn-dpack one" data-toggle="dropdown"> DPack</a>
                         <span class="vector-img"><img src="images/vector.png"></span>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="#">Voli</a>
@@ -148,7 +148,7 @@
                             <a class="dropdown-item" href="#">Attività</a>
                         </div>
                     </div>
-                    <div class="dropdown">
+                    <div class="col-md-2 col-sm-12 col-xs-12 selected">
                         <a class="btn btn-default dropdown-toggle btn-selected two" data-toggle="dropdown">Selected</a>
                         <span class="vector-img"><img src="images/selected.png"></span>
                         <div class="dropdown-menu">
@@ -158,7 +158,7 @@
                             <a class="dropdown-item" href="#">Selected</a>
                         </div>
                     </div>
-                    <div class="dropdown">
+                    <div class=" col-md-2 col-sm-12 col-xs-12 travel">
                         <a class="btn btn-default dropdown-toggle btn-travel-experience three" data-toggle="dropdown">Travel Experience</a>
                         <span class="vector-img"><img src="images/tavel.png"></span>
                         <div class="dropdown-menu">
@@ -167,8 +167,8 @@
                             <a class="dropdown-item" href="#">Catalogo</a>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3 network border-left">
+                <!-- </div> -->
+                <div class="col-md-3 col-sm-12 col-xs-12 offset-md-3 network border-left">
                     <a class="btn btn-default network" href="#">Il mio network</a>
                 </div>
             </div>
@@ -211,13 +211,13 @@
                     </div>
                 </div>
                     <div class="row justify-content-start">
-                        <div class="col-md-5">
+                        <div class="col-lg-5 col-md-12 col-sm-12">
                             <div class="form-group form-inline justify-content-start">
                                 <label for="partenza-da" class="text-uppercase">PARTENZA DA*</label>                
                                 <input type="text" class="form-control" placeholder="">
                             </div>
                         </div>
-                        <div class="col-md-5">
+                        <div class="col-lg-5 col-md-12 col-sm-12">
                             <div class="form-group form-inline justify-content-start">
                                 <label for="arrivo-a" class="text-uppercase">ARRIVO A*</label>
                                 <input type="text" class="form-control" placeholder="">
@@ -226,9 +226,9 @@
                     </div>                                    
                     <div class="bootstrap-iso">
                         <div class="row">
-                            <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
                                 <div class="form-group form-inline justify-content-start">
-                                    <label for="andata" class="control-label" for="date">ANDATA*</label>         
+                                    <label for="andata" class="control-label" for="date">ANDATA*</label>  
                                     <div class="input-group">
                                     <!-- <label for="andata" class="control-label" for="date">ANDATA*</label>  -->
                                     <div class="input-group-addon">
@@ -237,8 +237,9 @@
                                         <input class="form-control" id="date" name="date" placeholder="mm/dd/yyyy" type="text"/>
                                     </div>
                                 </div>
+                                
                             </div>
-                            <div class="form-group col-md-3">
+                            <div class="form-group col-lg-3 col-md-12 col-sm-12 col-xs-12">
                                 <div class="form-group form-inline justify-content-start">
                                     <label for="inputState">ORARIO</label>
                                     <select id="inputState" class="form-control">
@@ -248,10 +249,11 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
                                 <div class="form-group form-inline justify-content-start">
-                                    <label for="ritorno" class="control-label" for="date">RITORNO*</label>         
+                                    <label for="ritorno" class="control-label" for="date">RITORNO*</label>
                                     <div class="input-group">
+                                         <!-- <label for="ritorno" class="control-label" for="date">RITORNO*</label>  -->
                                     <div class="input-group-addon">
                                         <i class="fa fa-calendar"></i>
                                     </div>
@@ -259,7 +261,7 @@
                                     </div>
                                 </div>                               
                             </div>
-                            <div class="form-group col-md-3">
+                            <div class="form-group col-lg-3 col-md-12 col-sm-12 col-xs-12">
                                 <div class="form-group form-inline justify-content-start">
                                     <label for="inputState">ORARIO</label>
                                     <select id="inputState" class="form-control">
@@ -272,7 +274,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="form-group col-md-4">
+                        <div class="form-group col-lg-4 col-md-12 col-sm-12 col-xs-12">
                             <div class="form-group form-inline justify-content-start">
                                 <label for="inputState">PASSEGGERI ADULTI</label>
                                 <select id="inputState" class="form-control">
@@ -281,7 +283,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="form-group col-md-4">
+                        <div class="form-group col-lg-4 col-md-12 col-sm-12 col-xs-12">
                             <div class="form-group form-inline justify-content-start">
                                 <label for="inputState">BAMBINI (2-11 A)</label>
                                 <select id="inputState" class="form-control">
@@ -290,7 +292,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="form-group col-md-4">
+                        <div class="form-group col-lg-4 col-md-12 col-sm-12 col-xs-12">
                             <div class="form-group form-inline justify-content-start">
                                 <label for="inputState">NEONATI (0-1 A)</label>
                                 <select id="inputState" class="form-control">
