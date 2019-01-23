@@ -4,9 +4,7 @@ html, body{
 }
 .container{
     position: relative;
-    max-width: 1180;
-    padding-left: auto;
-    padding-right: auto;
+    max-width: 1180px;
 }
 #header{
     background-color: #3d3d3d;
@@ -39,7 +37,7 @@ html, body{
     padding-bottom: 0;
     font-size: 16px;
     border: 1px solid #d9d9d9;
-    margin-top: 48;
+    margin-top: 48px;
     border-top: 0;
     border-radius: 0;
     z-index: 1002;
@@ -49,7 +47,7 @@ html, body{
     display: block;
     position: absolute;
     bottom: -45px;
-    left: 25;
+    left: 25px;
     right: 0;
     margin-left: auto;
     margin-right: auto;
@@ -170,17 +168,25 @@ strong{
 }
 .dpack .vector-img {
     top: 49px;
-    right: 21px;
+    right: 26px;
     position: absolute;
+}
+#second .dropdown > a.one.btn.active:after {
+    background: url("images/vector1.png");
+    width: 35px;
+    border: 0;
+    height: 36px;
+    top: -20px;
+    right: -2px;
 }
 .selected .vector-img {
     top: 48px;
-    right: 8px;
+    right: 12px;
     position: absolute;
 }
 .travel .vector-img {
     top: 48px;
-    right: 4px;
+    right: 10px;
     position: absolute;
 }
 #second .dropdown > a.one.btn.active {
@@ -301,7 +307,7 @@ form{
     position: relative;
     padding: 0px 35px;
     margin-bottom: 12px;
-    cursor: pointer;
+    /* cursor: pointer; */
     font-size: 18px;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -311,7 +317,7 @@ form{
 .check input{
     position: absolute;
     opacity: 0;
-    cursor: pointer;
+    /* cursor: pointer; */
     height: 0;
     width: 0;
 }
@@ -496,20 +502,20 @@ nav.menu .show a{
 @media (max-width: 1199px) { 
     .dpack .vector-img {
         top: 49px;
-        right: 2px;
+        right: 26px;
     }
     .selected .vector-img {
-        right: -11px;
+        right: 13px;
     }
     .travel .vector-img {
-        right: -26px;
+        right: 10px;
     }
     #second .dropdown-menu {
         padding: 13px;
         min-width: 470px;
     }
     #second .dropdown > a.one.btn.active:before {
-        left: 23px;
+        left: 1px;
     }
     .border-left {
         margin: 35px 0px 0px 301px;
@@ -525,16 +531,19 @@ nav.menu .show a{
         max-width: 20%;
     }
     .dpack .vector-img, .selected .vector-img  {
-        right: 25px;
+        right: 61px;
+    }
+    .selected .vector-img  {
+        right: 48px;  
     }
     #header .icon {
         margin-top: 100px;
     }
     .travel .vector-img {
-        right: -67px;
+        right: -22px;
     }
     #second .dropdown > a.one.btn.active:before {
-        left: 5px;
+        left: -34px;
     }
     .form-inline .form-control {
         width: 100%;
