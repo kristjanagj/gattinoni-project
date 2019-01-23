@@ -132,44 +132,42 @@
     </div>
     <div id="second" class="wrapper">
         <div class="container">          
-            <div class="row">
-                    <div class="dropdown col-md-2 col-sm-12 col-xs-12 dpack">
-                        <a class="active btn btn-default dropdown-toggle btn-dpack one" data-toggle="dropdown"> DPack</a>
-                        <span class="vector-img"><img src="images/vector.png" alt="img"></span>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Voli</a>
-                            <a class="dropdown-item" href="#">Hotel</a>
-                            <a class="dropdown-item" href="#">Auto Scooter</a>
-                            <a class="dropdown-item" href="#">Treni</a>
-                            <a class="dropdown-item" href="#">Appartamenti</a>
-                            <a class="dropdown-item" href="#">Trasferimenti</a>
-                            <a class="dropdown-item" href="#">Parcheggi</a>
-                            <a class="dropdown-item" href="#">Attività</a>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-sm-12 col-xs-12 selected">
-                        <a class="btn btn-default dropdown-toggle btn-selected two" data-toggle="dropdown">Selected</a>
-                        <span class="vector-img"><img src="images/selected.png" alt="img"></span>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Vacanze</a>
-                            <a class="dropdown-item" href="#">Soggiorni</a>
-                            <a class="dropdown-item" href="#">Crociere</a>
-                            <a class="dropdown-item" href="#">Selected</a>
-                        </div>
-                    </div>
-                    <div class=" col-md-2 col-sm-12 col-xs-12 travel">
-                        <a class="btn btn-default dropdown-toggle btn-travel-experience three" data-toggle="dropdown">Travel Experience</a>
-                        <span class="vector-img"><img src="images/tavel.png" alt="img"></span>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Cerca</a>                   
-                            <a class="dropdown-item" href="#">Wedding</a>
-                            <a class="dropdown-item" href="#">Catalogo</a>
-                        </div>
-                    </div>
-                <div class="col-md-3 col-sm-12 col-xs-12 offset-md-3 network border-left">
-                    <a class="btn btn-default network" href="#">Il mio network</a>
+            <div class="dpack">
+                <a class="active btn btn-default dropdown-toggle btn-dpack one" data-toggle="dropdown"> DPack</a>
+                <span class="vector-img"><img src="images/vector.png" alt="img"></span>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Voli</a>
+                    <a class="dropdown-item" href="#">Hotel</a>
+                    <a class="dropdown-item" href="#">Auto Scooter</a>
+                    <a class="dropdown-item" href="#">Treni</a>
+                    <a class="dropdown-item" href="#">Appartamenti</a>
+                    <a class="dropdown-item" href="#">Trasferimenti</a>
+                    <a class="dropdown-item" href="#">Parcheggi</a>
+                    <a class="dropdown-item" href="#">Attività</a>
                 </div>
             </div>
+            <div class="selected">
+                <a class="btn btn-default dropdown-toggle btn-selected two" data-toggle="dropdown">Selected</a>
+                <span class="vector-img"><img src="images/selected.png" alt="img"></span>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Vacanze</a>
+                    <a class="dropdown-item" href="#">Soggiorni</a>
+                    <a class="dropdown-item" href="#">Crociere</a>
+                    <a class="dropdown-item" href="#">Selected</a>
+                </div>
+            </div>
+            <div class="travel">
+                <a class="btn btn-default dropdown-toggle btn-travel-experience three" data-toggle="dropdown">Travel Experience</a>
+                <span class="vector-img"><img src="images/tavel.png" alt="img"></span>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Cerca</a>                   
+                    <a class="dropdown-item" href="#">Wedding</a>
+                    <a class="dropdown-item" href="#">Catalogo</a>
+                </div>
+            </div>
+        <div class="border-left">
+            <a class="btn btn-default network" href="#">Il mio network</a>
+        </div>
         </div>
     </div>
     <div id="voli" class="wrapper">
@@ -336,79 +334,81 @@
                     </div>               
             </form>
             <div class="row">
-                <div class="col-md-12 ricerca">
-                    <p><a class="btn btn-primary btn-lg btn-block button-table" data-toggle="collapse" href="#collapseTable" role="button" aria-expanded="false" aria-controls="collapseExample">
-                        ULTIME 10 RICERCHE </a> </p>                            
+                <div class="col-md-12">
+                    <a class="btn btn-primary btn-lg btn-block button-table" data-toggle="collapse" href="#collapseTable" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <span class="ricerche">ULTIME 10 RICERCHE</span> <span class="arrow"><img src="images/arrow.png"></span>  </a>                
                     <div class="collapse" id="collapseTable">
                         <div class="card card-body">
-                            <table class="table">
-                                <tr>
-                                    <td><strong>milano linate-roma ciampino</strong></td>
-                                    <td>andata: <strong>25/01/2018</strong> - 10:00</td>
-                                    <td>ritorno: <strong>29/01/2018</strong> - 18:00</td>
-                                    <td>A: <strong>2</strong> -B: <strong>1</strong> -N: <strong>0</strong></td>
-                                </tr>
-                                <tr>
-                                    <td><strong>milano linate-roma ciampino</strong></td>
-                                    <td>andata: <strong>25/01/2018</strong> - 10:00</td>
-                                    <td>ritorno: <strong>29/01/2018</strong> - 18:00</td>
-                                    <td>A: <strong>2</strong> -B: <strong>1</strong> -N: <strong>0</strong></td>
-                                </tr>
-                                <tr>
-                                    <td><strong>milano linate-roma ciampino</strong></td>
-                                    <td>andata: <strong>25/01/2018</strong> - 10:00</td>
-                                    <td></td>
-                                    <td>A: <strong>2</strong> -B: <strong>1</strong> -N: <strong>0</strong></td>
-                                </tr>
-                                <tr>
-                                    <td><strong>milano linate-roma ciampino</strong></td>
-                                    <td>andata: <strong>25/01/2018</strong> - 10:00</td>
-                                    <td>ritorno: <strong>29/01/2018</strong> - 18:00</td>
-                                    <td>A: <strong>2</strong> -B: <strong>1</strong> -N: <strong>0</strong></td>
-                                </tr>
-                                <tr>
-                                    <td><strong>milano linate-roma ciampino</strong></td>
-                                    <td>andata: <strong>25/01/2018</strong> - 10:00</td>
-                                    <td></td>
-                                    <td>A: <strong>2</strong> -B: <strong>1</strong> -N: <strong>0</strong></td>
-                                </tr>
-                                <tr>
-                                    <td><strong>milano linate-roma ciampino</strong></td>
-                                    <td>andata: <strong>25/01/2018</strong> - 10:00</td>
-                                    <td>ritorno: <strong>29/01/2018</strong> - 18:00</td>
-                                    <td>A: <strong>2</strong> -B: <strong>1</strong> -N: <strong>0</strong></td>
-                                </tr>
-                                <tr>
-                                    <td><strong>milano linate-roma ciampino</strong></td>
-                                    <td>andata: <strong>25/01/2018</strong> - 10:00</td>
-                                    <td>ritorno: <strong>29/01/2018</strong> - 18:00</td>
-                                    <td>A: <strong>2</strong> -B: <strong>1</strong> -N: <strong>0</strong></td>
-                                </tr>
-                                <tr>
-                                    <td><strong>milano linate-roma ciampino</strong></td>
-                                    <td>andata: <strong>25/01/2018</strong> - 10:00</td>
-                                    <td>ritorno: <strong>29/01/2018</strong> - 18:00</td>
-                                    <td>A: <strong>2</strong> -B: <strong>1</strong> -N: <strong>0</strong></td>
-                                </tr>
-                                <tr>
-                                    <td><strong>milano linate-roma ciampino</strong></td>
-                                    <td>andata: <strong>25/01/2018</strong> - 10:00</td>
-                                    <td></td>
-                                    <td>A: <strong>2</strong> -B: <strong>1</strong> -N: <strong>0</strong></td>
-                                </tr>
-                                <tr>
-                                    <td><strong>milano linate-roma ciampino</strong></td>
-                                    <td>andata: <strong>25/01/2018</strong> - 10:00</td>
-                                    <td></td>
-                                    <td>A: <strong>2</strong> -B: <strong>1</strong> -N: <strong>0</strong></td>
-                                </tr>
-                                <tr>
-                                    <td><strong>milano linate-roma ciampino</strong></td>
-                                    <td>andata: <strong>25/01/2018</strong> - 10:00</td>
-                                    <td>ritorno: <strong>29/01/2018</strong> - 18:00</td>
-                                    <td>A: <strong>2</strong> -B: <strong>1</strong> -N: <strong>0</strong></td>
-                                </tr>                                          
-                            </table>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <tr>
+                                        <td><strong>milano linate-roma ciampino</strong></td>
+                                        <td>andata: <strong>25/01/2018</strong> - 10:00</td>
+                                        <td>ritorno: <strong>29/01/2018</strong> - 18:00</td>
+                                        <td>A: <strong>2</strong> -B: <strong>1</strong> -N: <strong>0</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>milano linate-roma ciampino</strong></td>
+                                        <td>andata: <strong>25/01/2018</strong> - 10:00</td>
+                                        <td>ritorno: <strong>29/01/2018</strong> - 18:00</td>
+                                        <td>A: <strong>2</strong> -B: <strong>1</strong> -N: <strong>0</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>milano linate-roma ciampino</strong></td>
+                                        <td>andata: <strong>25/01/2018</strong> - 10:00</td>
+                                        <td></td>
+                                        <td>A: <strong>2</strong> -B: <strong>1</strong> -N: <strong>0</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>milano linate-roma ciampino</strong></td>
+                                        <td>andata: <strong>25/01/2018</strong> - 10:00</td>
+                                        <td>ritorno: <strong>29/01/2018</strong> - 18:00</td>
+                                        <td>A: <strong>2</strong> -B: <strong>1</strong> -N: <strong>0</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>milano linate-roma ciampino</strong></td>
+                                        <td>andata: <strong>25/01/2018</strong> - 10:00</td>
+                                        <td></td>
+                                        <td>A: <strong>2</strong> -B: <strong>1</strong> -N: <strong>0</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>milano linate-roma ciampino</strong></td>
+                                        <td>andata: <strong>25/01/2018</strong> - 10:00</td>
+                                        <td>ritorno: <strong>29/01/2018</strong> - 18:00</td>
+                                        <td>A: <strong>2</strong> -B: <strong>1</strong> -N: <strong>0</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>milano linate-roma ciampino</strong></td>
+                                        <td>andata: <strong>25/01/2018</strong> - 10:00</td>
+                                        <td>ritorno: <strong>29/01/2018</strong> - 18:00</td>
+                                        <td>A: <strong>2</strong> -B: <strong>1</strong> -N: <strong>0</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>milano linate-roma ciampino</strong></td>
+                                        <td>andata: <strong>25/01/2018</strong> - 10:00</td>
+                                        <td>ritorno: <strong>29/01/2018</strong> - 18:00</td>
+                                        <td>A: <strong>2</strong> -B: <strong>1</strong> -N: <strong>0</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>milano linate-roma ciampino</strong></td>
+                                        <td>andata: <strong>25/01/2018</strong> - 10:00</td>
+                                        <td></td>
+                                        <td>A: <strong>2</strong> -B: <strong>1</strong> -N: <strong>0</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>milano linate-roma ciampino</strong></td>
+                                        <td>andata: <strong>25/01/2018</strong> - 10:00</td>
+                                        <td></td>
+                                        <td>A: <strong>2</strong> -B: <strong>1</strong> -N: <strong>0</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>milano linate-roma ciampino</strong></td>
+                                        <td>andata: <strong>25/01/2018</strong> - 10:00</td>
+                                        <td>ritorno: <strong>29/01/2018</strong> - 18:00</td>
+                                        <td>A: <strong>2</strong> -B: <strong>1</strong> -N: <strong>0</strong></td>
+                                    </tr>                                          
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>

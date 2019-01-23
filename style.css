@@ -160,28 +160,25 @@ strong{
 .btn:focus{
     box-shadow: none;
 }
-.dpack, .selected, .tavel{
-    max-width: 11%;
-}
 .one.btn {
     border: 1px solid #8ccbc0;
 }
 .dpack .vector-img {
     top: 49px;
-    right: 26px;
+    right: 10px;
     position: absolute;
 }
-#second .dropdown > a.one.btn.active:after {
+/* #second .dropdown > a.one.btn.active:after {
     background: url("images/vector1.png");
     width: 35px;
     border: 0;
     height: 36px;
     top: -20px;
     right: -2px;
-}
+} */
 .selected .vector-img {
     top: 48px;
-    right: 12px;
+    right: 9px;
     position: absolute;
 }
 .travel .vector-img {
@@ -207,7 +204,7 @@ strong{
     border-left: 14px solid transparent;
     border-right: 14px solid transparent;
     border-top: 17px solid #8ccbc0;
-    z-index: 9999;
+    z-index: 1;
 }
 #second .dropdown-toggle{
     color: #585858;
@@ -252,6 +249,10 @@ strong{
 #second .travel .dropdown-menu {
     min-width: 320px;
 }
+
+#second .container{
+    display: flex;
+}
 .four{
     display: flex;
     justify-content: flex-end;
@@ -259,11 +260,11 @@ strong{
 #second{
     background-color: #f6f6f6;
     border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 50px;
 }
-#voli .vector-img {
-    top: 4px;
-    right: 20px;
-    position: absolute;
+
+.dpack, .selected, .travel{
+    position: relative;
 }
 .border-left{
     height: 10%;
@@ -294,6 +295,18 @@ strong{
     padding-right: 0px;
     margin-top: 10px;
     box-shadow: 0 0 0 5px #f6f6f6;
+    position: relative;
+}
+a.btn.btn-default.tick-image.tick [aria-expanded="true"] {
+    background-color: red;
+}
+#voli .vector-img {
+    top: -8px;
+    right: -6px;
+    position: absolute;
+}
+.fa-angle-down{
+    position: absolute;
 }
 .ricerca{
     text-align: right;
@@ -382,31 +395,38 @@ h2{
     background-color: #f6f6f6;
     font-weight: bold;
 }
-label{
-    padding: 10px;
-}
 .form-inline .form-control {
     display: inline-block;
     width: 49%;
     vertical-align: middle;
     border: transparent;
     background-color: #f6f6f6;
+    height: 48px;
 }
 .bootstrap-iso .form-inline .control-label {
     color: #7f7f7f;
     font-size: 18px;
     font-weight: bold;
 }
+.form-control {
+    border-radius: 0px;
+}
+
+.bootstrap-iso .form-group {
+    flex-wrap: nowrap;
+}
 .form-inline label {
     color: #7f7f7f;
     font-size: 18px;
     font-weight: bold;
     font-family: 'PT Sans', sans-serif;
+    padding: 10px 20px 20px 0px;
 }
 .bootstrap-iso .form-inline .form-control {
     color: #7f7f7f;
     font-size: 18px;
     font-family: 'PT Sans', sans-serif;
+    border-radius: 0px;
 }
 .table td {
     padding: 13px 33px;
@@ -429,6 +449,7 @@ tr:nth-child(odd) {
     padding: 0px;
 }
 .button-table{
+    position: relative;
     color: #585858;
     font-weight: bold;
     text-align: left;
@@ -436,6 +457,17 @@ tr:nth-child(odd) {
     border: 1px solid #8ccbc0;
     width: 98%;
     font-size: 15px;
+    margin-bottom: 15px;
+}
+.arrow{
+    position: absolute;
+    right: 16px;
+    top: 13px;
+    width: 18px;
+    height: 18px; 
+}
+.button-table [aria-expanded="true"] .arrow {
+    transform: rotate(180deg);
 }
 .btn-primary:hover, .btn-primary:focus {
     color: #585858;
@@ -500,16 +532,6 @@ nav.menu .show a{
 } */
 
 @media (max-width: 1199px) { 
-    .dpack .vector-img {
-        top: 49px;
-        right: 26px;
-    }
-    .selected .vector-img {
-        right: 13px;
-    }
-    .travel .vector-img {
-        right: 10px;
-    }
     #second .dropdown-menu {
         padding: 13px;
         min-width: 470px;
@@ -521,26 +543,12 @@ nav.menu .show a{
         margin: 35px 0px 0px 301px;
     }
 }
-
-
 @media (max-width: 991px) { 
     .menu-brand img {
         padding: 16px;
     }
-    .dpack, .selected, .tavel {
-        max-width: 20%;
-    }
-    .dpack .vector-img, .selected .vector-img  {
-        right: 61px;
-    }
-    .selected .vector-img  {
-        right: 48px;  
-    }
     #header .icon {
         margin-top: 100px;
-    }
-    .travel .vector-img {
-        right: -22px;
     }
     #second .dropdown > a.one.btn.active:before {
         left: -34px;
@@ -606,12 +614,6 @@ nav.menu .show a{
     }
     #second {
         padding-bottom: 20px;
-    }
-    .dpack .vector-img {
-        right: 25px;
-    }
-    .selected .vector-img, .travel .vector-img {
-        right: 4px;
     }
     .tick-image.btn-default {
         text-align: center;
