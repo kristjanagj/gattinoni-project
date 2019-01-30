@@ -168,14 +168,6 @@ strong{
     right: 10px;
     position: absolute;
 }
-/* #second .dropdown > a.one.btn.active:after {
-    background: url("images/vector1.png");
-    width: 35px;
-    border: 0;
-    height: 36px;
-    top: -20px;
-    right: -2px;
-} */
 .selected .vector-img {
     top: 48px;
     right: 9px;
@@ -217,7 +209,7 @@ strong{
 .three.btn {
     border: 1px solid #9186bc;
 }
-#second .show .two.btn, #second .show .three.btn{
+#second .show .one.btn, #second .show .two.btn, #second .show .three.btn{
     border: 1px solid #d9d9d9;
     background-color: white;
 }
@@ -227,7 +219,7 @@ strong{
     background-color: white;
 }
 #second .dpack .dropdown-menu {
-    margin-top: -44px;
+    margin-top: -4px;
 }
 #second .dropdown > a.one.btn.active:before .show{
     display: none;
@@ -320,7 +312,6 @@ form{
     position: relative;
     padding: 0px 35px;
     margin-bottom: 12px;
-    /* cursor: pointer; */
     font-size: 18px;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -330,7 +321,6 @@ form{
 .check input{
     position: absolute;
     opacity: 0;
-    /* cursor: pointer; */
     height: 0;
     width: 0;
 }
@@ -476,6 +466,10 @@ tr:nth-child(odd) {
     border: 1px solid #8ccbc0;
     box-shadow: none;
 }
+#second .container{
+    display: flex;
+    flex-wrap: wrap;
+}
 .toast{
     padding-top: 60px;
 }
@@ -524,13 +518,6 @@ tr:nth-child(odd) {
     border-bottom: 4px solid #9f9f9f;
     background-color: transparent;
 }
-/* nav.menu .dropdown a{
-    background: rebeccapurple;
-}
-nav.menu .show a{
-    background: red;
-} */
-
 @media (max-width: 1199px) { 
     #second .dropdown-menu {
         padding: 13px;
@@ -588,9 +575,6 @@ nav.menu .show a{
         padding-bottom: 20px;
         padding-right: 0px; 
     }
-    #second .dropdown-toggle {
-        width: 100%;
-    }
     #header .dropdown-menu {
         margin-top: 29px;
     }
@@ -619,10 +603,6 @@ nav.menu .show a{
         text-align: center;
         width: 100%;
         margin: 20px 0px 45px 0px;
-    }
-    #voli .vector-img {
-        top: 14px;
-        right: 11px;
     }
     .check {
         font-size: 16px;
