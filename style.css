@@ -529,13 +529,16 @@ tr:nth-child(odd) {
     .border-left {
         margin: 35px 0px 0px 301px;
     }
+    #header .icon {
+        justify-content: center;
+    }
 }
 @media (max-width: 991px) { 
     .menu-brand img {
         padding: 16px;
     }
     #header .icon {
-        margin-top: 100px;
+        margin-top: 33px;
     }
     #second .dropdown > a.one.btn.active:before {
         left: -34px;
@@ -593,8 +596,8 @@ tr:nth-child(odd) {
     .network.btn {
         width: 98%;
     }
-    .border-left{
-        margin-left: -36px;
+    .border-left {
+        margin-left: 35px;
     }
     #second {
         padding-bottom: 20px;
@@ -637,6 +640,12 @@ tr:nth-child(odd) {
     .form-check-inline {
         display: flex;
         flex-wrap: wrap;
+    }
+    .border-left {
+        margin-left: 8px;
+    }
+    .network.btn {
+        margin: 10px 0px 0px 12px;
     }
     .footer-list a {
         padding: 3px;
